@@ -1,0 +1,22 @@
+.radio-un-select,
+.radio-selected {
+  position: relative;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 3px solid green;
+  box-sizing: border-box;
+}
+
+.radio-selected::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: "";
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  background-color: green;
+  transform: translate(-50%, -50%);
+}
